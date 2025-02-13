@@ -1,9 +1,6 @@
 # garagem-elite
 
 ### Clone The Project
-```sh
-git clone https://github.com/seu-usuario/seu-repositorio.git
-```
 
 ### Navigate to the project folder
 ```sh
