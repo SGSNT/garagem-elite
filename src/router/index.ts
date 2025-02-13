@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import CarForm from '@/components/CarForm.vue'
 
 const routes = [
   {
@@ -8,11 +7,6 @@ const routes = [
     name: 'home',
     component: HomeView
   },
-  {
-    path: '/cadastro',
-    name: 'cadastro',
-    component: CarForm
-  }
 ]
 
 const router = createRouter({

@@ -32,7 +32,7 @@
       </form>
       <hr />
       <div v-if="cars.length > 0">
-        <h3>Carro salvo: </h3>
+        <h3>Detalhes do Carro: </h3>
         <table class="table table-striped table-bordered">
           <thead class="table-dark text-center">
             <tr>
