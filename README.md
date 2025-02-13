@@ -1,24 +1,14 @@
 # garagem-elite
 
 ## Project setup
-```
-npm install
-```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## 🚀 Como configurar o projeto
 
-### Compiles and minifies for production
-```
-npm run build
-```
+### 1️⃣ Clonar o repositório
+```sh
+git clone https://github.com/seu-usuario/seu-repositorio.git
 
-### Lints and fixes files
-```
-npm run lint
-```
+### 2️⃣ Entrar na pasta do projeto
+ 
+cd nome-do-projeto
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
