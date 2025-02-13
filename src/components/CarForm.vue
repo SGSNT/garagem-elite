@@ -1,5 +1,5 @@
 <template>
-    <div class="container mt-4">
+    <div class="container mt-3">
       <h2>Cadastro de Carros</h2>
       <form @submit.prevent="addCar">
         <div class="mb-3">
@@ -31,27 +31,29 @@
         <button type="submit" class="btn btn-primary">Cadastrar</button>
       </form>
       <hr />
-      <h3>Carros Cadastrados</h3>
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th>Modelo</th>
-            <th>Marca</th>
-            <th>Cor</th>
-            <th>Ano</th>
-            <th>Status</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr v-for="(c, index) in cars" :key="index">
-            <td>{{ c.model }}</td>
-            <td>{{ c.brand }}</td>
-            <td>{{ c.color }}</td>
-            <td>{{ c.year }}</td>
-            <td>{{ c.status }}</td>
-          </tr>
-        </tbody>
-      </table>
+      <div v-if="cars.length > 0">
+        <h3>Carro salvo: </h3>
+        <table class="table table-striped table-bordered">
+          <thead class="table-dark text-center">
+            <tr>
+              <th class="p-1">Modelo</th>
+              <th class="p-1">Marca</th>
+              <th class="p-1">Cor</th>
+              <th class="p-1">Ano</th>
+              <th class="p-1">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="(c, index) in cars" :key="index">
+              <td  class="p-1">{{ c.model }}</td>
+              <td  class="p-1">{{ c.brand }}</td>
+              <td  class="p-1">{{ c.color }}</td>
+              <td  class="p-1">{{ c.year }}</td>
+              <td  class="p-1">{{ c.status }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </template>
 <script setup>
