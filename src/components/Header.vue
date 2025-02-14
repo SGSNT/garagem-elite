@@ -11,7 +11,7 @@
             />
           </a>
         </div>
-        <div class="col-2 text-end">
+        <div class="col-8 text-end">
           <button class="btn btn-success">
             <a
               href="/cadastro"
@@ -21,7 +21,17 @@
             </a>
           </button>
         </div>
-      </div>
+        <div class="col-2 text-start">
+          <button class="btn btn-success">
+            <a
+              href="/login"
+              class="link-offset-2 link-underline link-underline-opacity-0 text-reset"
+            >
+              Login
+            </a>
+          </button>
+        </div>    
+      </div> 
     </div>
   </header>
 </template>
